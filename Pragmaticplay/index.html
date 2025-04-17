@@ -1,1 +1,153 @@
-
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indonesian Times - Pragmaticplay</title>
+    <style>
+        :root {
+            --primary-red: #e63946;
+            --secondary-red: #ef233c;
+            --white: #ffffff;
+            --light-gray: #f8f9fa;
+            --dark-gray: #212529;
+        }
+        
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--dark-gray);
+            background-color: var(--white);
+        }
+        
+        header {
+            background-color: var(--white);
+            border-bottom: 3px solid var(--primary-red);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            color: var(--primary-red);
+            font-size: 2rem;
+            font-weight: 700;
+            text-decoration: none;
+        }
+        
+        .category-title {
+            background-color: var(--primary-red);
+            color: var(--white);
+            padding: 1.5rem 2rem;
+            margin: 0;
+            font-size: 1.8rem;
+        }
+        
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+        
+        .article-card {
+            background-color: var(--white);
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .article-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 3px solid var(--primary-red);
+        }
+        
+        .article-content {
+            padding: 1.5rem;
+        }
+        
+        .article-title {
+            color: var(--primary-red);
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+        
+        .article-excerpt {
+            color: var(--dark-gray);
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+        
+        .read-more {
+            display: inline-block;
+            background-color: var(--primary-red);
+            color: var(--white);
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+        
+        .read-more:hover {
+            background-color: var(--secondary-red);
+        }
+        
+        footer {
+            background-color: var(--dark-gray);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .gallery-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="/" class="logo">INDONESIAN TIMES</a>
+        <nav>
+            <!-- Menu navigasi bisa ditambahkan di sini -->
+        </nav>
+    </header>
+    
+    <h1 class="category-title">Pragmaticplay</h1>
+    
+    <div class="gallery-container">
+       <!-- area gallery -->
+        <div class="article-card">
+            <img src="https://via.placeholder.com/600x400?text=Artikel+1" alt="Artikel 1" class="article-image">
+            <div class="article-content">
+                <h2 class="article-title">Terungkap! Inilah Cara 'Live RTP' Mengubah Permainan Online – Anda Tidak Akan Percaya!</h2>
+                <p class="article-excerpt">Bongkar rahasia industri game digital melalui teknologi Live RTP yang mengubah strategi permainan online secara drastis. Klik dan temukan kunci kemenangan Anda!</p>
+                <a href="https://indonesiantimes.github.io/News/Pragmaticplay/Terungkap!-Inilah-Cara-Live-RTP-Mengubah-Permainan-Online%E2%80%93Anda-Tidak-Akan-Percaya!.html" class="read-more">Baca Selengkapnya</a>
+            </div>
+        </div>
+        
+      
+        
+        
+        <!-- area gallery -->
+    </div>
+    
+    <footer>
+        <p>© 2025 Indonesian Times. Semua Hak Cipta Dilindungi.</p>
+    </footer>
+</body>
+</html>
